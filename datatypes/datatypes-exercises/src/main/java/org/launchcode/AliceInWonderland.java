@@ -14,5 +14,12 @@ public class AliceInWonderland {
 
         boolean isIncluded = firstSentence.toLowerCase().contains(userWord);
         System.out.println("Your result is: " + isIncluded);
+
+        int index = firstSentence.toLowerCase().indexOf(userWord);
+        int length = userWord.length();
+        System.out.println("Your word is located at index " + index + " and is " + length + " letters long.");
+
+        String secondSentence = firstSentence.replace(userWord.toLowerCase(), "");
+        System.out.println(secondSentence);
     }
 }
