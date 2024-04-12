@@ -27,6 +27,16 @@ public class Menu {
     public ArrayList<MenuItem> getItems() {
         return items;
     }
+
+    public void addMenuItem(MenuItem oneItem) {
+        if (!items.contains(oneItem)) {
+            items.add(oneItem);
+        }
+    }
+
+    public void removeMenuItem(MenuItem oneItem) {
+            items.remove(oneItem);
+    }
 }
 
 
